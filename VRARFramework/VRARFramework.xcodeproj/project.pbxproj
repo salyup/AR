@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB77DDB12761AC2200217F64 /* VRARFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = BB77DDB02761AC2200217F64 /* VRARFramework.docc */; };
+		BB77DDB72761AC2300217F64 /* VRARFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB77DDAC2761AC2200217F64 /* VRARFramework.framework */; };
+		BB77DDBC2761AC2300217F64 /* VRARFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB77DDBB2761AC2300217F64 /* VRARFrameworkTests.m */; };
+		BB77DDBD2761AC2300217F64 /* VRARFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BB77DDAF2761AC2200217F64 /* VRARFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB77DF012761E01E00217F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB77DE9F2761E01D00217F64 /* Assets.xcassets */; };
+		BB77DF022761E01E00217F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB77DEA02761E01D00217F64 /* LaunchScreen.storyboard */; };
+		BB97BB15276C72E300CD5006 /* PlaneRendererNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BACD276C72E200CD5006 /* PlaneRendererNode.m */; };
+		BB97BB16276C72E300CD5006 /* ControlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BACE276C72E200CD5006 /* ControlNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB97BB17276C72E300CD5006 /* ARNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BACF276C72E200CD5006 /* ARNode.m */; };
+		BB97BB18276C72E300CD5006 /* VideoRendererNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAD0276C72E200CD5006 /* VideoRendererNode.h */; };
+		BB97BB19276C72E300CD5006 /* MediaPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAD1276C72E200CD5006 /* MediaPlayerNode.m */; };
+		BB97BB1A276C72E300CD5006 /* TVNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAD2276C72E200CD5006 /* TVNode.h */; };
+		BB97BB1B276C72E300CD5006 /* ControlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAD3276C72E200CD5006 /* ControlNode.m */; };
+		BB97BB1C276C72E300CD5006 /* PlaneRendererNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAD4276C72E200CD5006 /* PlaneRendererNode.h */; };
+		BB97BB1D276C72E300CD5006 /* VideoRendererNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAD5276C72E200CD5006 /* VideoRendererNode.m */; };
+		BB97BB1E276C72E300CD5006 /* ARNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAD6276C72E200CD5006 /* ARNode.h */; };
+		BB97BB1F276C72E300CD5006 /* TVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAD7276C72E200CD5006 /* TVNode.m */; };
+		BB97BB20276C72E300CD5006 /* InteractableProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAD9276C72E200CD5006 /* InteractableProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB97BB21276C72E300CD5006 /* MediaPlayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BADA276C72E200CD5006 /* MediaPlayerNode.h */; };
+		BB97BB22276C72E300CD5006 /* NodeScaleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BADC276C72E200CD5006 /* NodeScaleHandler.m */; };
+		BB97BB23276C72E300CD5006 /* NodeInsertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BADD276C72E200CD5006 /* NodeInsertionHandler.m */; };
+		BB97BB24276C72E300CD5006 /* NodePositionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BADE276C72E200CD5006 /* NodePositionHandler.m */; };
+		BB97BB25276C72E300CD5006 /* SceneGestureRecognizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BADF276C72E200CD5006 /* SceneGestureRecognizerDelegate.h */; };
+		BB97BB26276C72E300CD5006 /* NodePlaybackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAE0276C72E200CD5006 /* NodePlaybackHandler.m */; };
+		BB97BB27276C72E300CD5006 /* NodeRotationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAE1276C72E200CD5006 /* NodeRotationHandler.m */; };
+		BB97BB28276C72E300CD5006 /* NodePositionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAE2276C72E200CD5006 /* NodePositionHandler.h */; };
+		BB97BB29276C72E300CD5006 /* NodeInsertionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAE3276C72E200CD5006 /* NodeInsertionHandler.h */; };
+		BB97BB2A276C72E300CD5006 /* NodeScaleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAE4276C72E200CD5006 /* NodeScaleHandler.h */; };
+		BB97BB2B276C72E300CD5006 /* SceneGestureRecognizerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAE5276C72E200CD5006 /* SceneGestureRecognizerDelegate.m */; };
+		BB97BB2C276C72E300CD5006 /* NodePlaybackHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAE6276C72E200CD5006 /* NodePlaybackHandler.h */; };
+		BB97BB2D276C72E300CD5006 /* GestureHandleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAE8276C72E200CD5006 /* GestureHandleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB97BB2E276C72E300CD5006 /* NodeRotationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAE9276C72E200CD5006 /* NodeRotationHandler.h */; };
+		BB97BB37276C72E300CD5006 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAF5276C72E200CD5006 /* Constants.m */; };
+		BB97BB38276C72E300CD5006 /* FileData.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAF6276C72E200CD5006 /* FileData.m */; };
+		BB97BB39276C72E300CD5006 /* DownloadResources.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAF7276C72E200CD5006 /* DownloadResources.m */; };
+		BB97BB3A276C72E300CD5006 /* SettingsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAF8276C72E200CD5006 /* SettingsManager.h */; };
+		BB97BB3B276C72E300CD5006 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAF9276C72E200CD5006 /* Constants.h */; };
+		BB97BB3C276C72E300CD5006 /* DownloadResources.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAFA276C72E200CD5006 /* DownloadResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB97BB3D276C72E300CD5006 /* FileData.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAFB276C72E200CD5006 /* FileData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB97BB3E276C72E300CD5006 /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BAFC276C72E200CD5006 /* SettingsManager.m */; };
+		BB97BB3F276C72E300CD5006 /* SCNMaterial+Contents.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAFE276C72E200CD5006 /* SCNMaterial+Contents.h */; };
+		BB97BB40276C72E300CD5006 /* SCNNode+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BAFF276C72E200CD5006 /* SCNNode+Helpers.h */; };
+		BB97BB41276C72E300CD5006 /* UIImpactFeedbackGenerator+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB00276C72E200CD5006 /* UIImpactFeedbackGenerator+Helpers.m */; };
+		BB97BB42276C72E300CD5006 /* UIViewController+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB01276C72E200CD5006 /* UIViewController+Helpers.h */; };
+		BB97BB43276C72E300CD5006 /* NSDateFormatter+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB02276C72E200CD5006 /* NSDateFormatter+Helpers.m */; };
+		BB97BB44276C72E300CD5006 /* SCNMaterial+Contents.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB03276C72E200CD5006 /* SCNMaterial+Contents.m */; };
+		BB97BB45276C72E300CD5006 /* NSDateFormatter+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB04276C72E200CD5006 /* NSDateFormatter+Helpers.h */; };
+		BB97BB46276C72E300CD5006 /* UIViewController+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB05276C72E200CD5006 /* UIViewController+Helpers.m */; };
+		BB97BB47276C72E300CD5006 /* UIImpactFeedbackGenerator+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB06276C72E200CD5006 /* UIImpactFeedbackGenerator+Helpers.h */; };
+		BB97BB48276C72E300CD5006 /* SCNNode+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB07276C72E200CD5006 /* SCNNode+Helpers.m */; };
+		BB97BB49276C72E300CD5006 /* UrlService.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB09276C72E300CD5006 /* UrlService.h */; };
+		BB97BB4F276C72E300CD5006 /* UrlService.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB0F276C72E300CD5006 /* UrlService.m */; };
+		BB97BB9D2771B84000CD5006 /* ARController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB992771B84000CD5006 /* ARController.m */; };
+		BB97BB9E2771B84000CD5006 /* ARPlaneRendererDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB9A2771B84000CD5006 /* ARPlaneRendererDelegate.h */; };
+		BB97BB9F2771B84000CD5006 /* ARPlaneRendererDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB9B2771B84000CD5006 /* ARPlaneRendererDelegate.m */; };
+		BB97BBA02771B84000CD5006 /* ARController.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB9C2771B84000CD5006 /* ARController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB77DDB82761AC2300217F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB77DDA32761AC2200217F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB77DDAB2761AC2200217F64;
+			remoteInfo = VRARFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB77DDAC2761AC2200217F64 /* VRARFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VRARFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB77DDAF2761AC2200217F64 /* VRARFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRARFramework.h; sourceTree = "<group>"; };
+		BB77DDB02761AC2200217F64 /* VRARFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VRARFramework.docc; sourceTree = "<group>"; };
+		BB77DDB62761AC2300217F64 /* VRARFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRARFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB77DDBB2761AC2300217F64 /* VRARFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRARFrameworkTests.m; sourceTree = "<group>"; };
+		BB77DE9F2761E01D00217F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB77DEA12761E01D00217F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB97BACD276C72E200CD5006 /* PlaneRendererNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaneRendererNode.m; sourceTree = "<group>"; };
+		BB97BACE276C72E200CD5006 /* ControlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlNode.h; sourceTree = "<group>"; };
+		BB97BACF276C72E200CD5006 /* ARNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARNode.m; sourceTree = "<group>"; };
+		BB97BAD0276C72E200CD5006 /* VideoRendererNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRendererNode.h; sourceTree = "<group>"; };
+		BB97BAD1276C72E200CD5006 /* MediaPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaPlayerNode.m; sourceTree = "<group>"; };
+		BB97BAD2276C72E200CD5006 /* TVNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVNode.h; sourceTree = "<group>"; };
+		BB97BAD3276C72E200CD5006 /* ControlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlNode.m; sourceTree = "<group>"; };
+		BB97BAD4276C72E200CD5006 /* PlaneRendererNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaneRendererNode.h; sourceTree = "<group>"; };
+		BB97BAD5276C72E200CD5006 /* VideoRendererNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoRendererNode.m; sourceTree = "<group>"; };
+		BB97BAD6276C72E200CD5006 /* ARNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARNode.h; sourceTree = "<group>"; };
+		BB97BAD7276C72E200CD5006 /* TVNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVNode.m; sourceTree = "<group>"; };
+		BB97BAD9276C72E200CD5006 /* InteractableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractableProtocol.h; sourceTree = "<group>"; };
+		BB97BADA276C72E200CD5006 /* MediaPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPlayerNode.h; sourceTree = "<group>"; };
+		BB97BADC276C72E200CD5006 /* NodeScaleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeScaleHandler.m; sourceTree = "<group>"; };
+		BB97BADD276C72E200CD5006 /* NodeInsertionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeInsertionHandler.m; sourceTree = "<group>"; };
+		BB97BADE276C72E200CD5006 /* NodePositionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodePositionHandler.m; sourceTree = "<group>"; };
+		BB97BADF276C72E200CD5006 /* SceneGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGestureRecognizerDelegate.h; sourceTree = "<group>"; };
+		BB97BAE0276C72E200CD5006 /* NodePlaybackHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodePlaybackHandler.m; sourceTree = "<group>"; };
+		BB97BAE1276C72E200CD5006 /* NodeRotationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeRotationHandler.m; sourceTree = "<group>"; };
+		BB97BAE2276C72E200CD5006 /* NodePositionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodePositionHandler.h; sourceTree = "<group>"; };
+		BB97BAE3276C72E200CD5006 /* NodeInsertionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeInsertionHandler.h; sourceTree = "<group>"; };
+		BB97BAE4276C72E200CD5006 /* NodeScaleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeScaleHandler.h; sourceTree = "<group>"; };
+		BB97BAE5276C72E200CD5006 /* SceneGestureRecognizerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneGestureRecognizerDelegate.m; sourceTree = "<group>"; };
+		BB97BAE6276C72E200CD5006 /* NodePlaybackHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodePlaybackHandler.h; sourceTree = "<group>"; };
+		BB97BAE8276C72E200CD5006 /* GestureHandleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureHandleProtocol.h; sourceTree = "<group>"; };
+		BB97BAE9276C72E200CD5006 /* NodeRotationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeRotationHandler.h; sourceTree = "<group>"; };
+		BB97BAF5276C72E200CD5006 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		BB97BAF6276C72E200CD5006 /* FileData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileData.m; sourceTree = "<group>"; };
+		BB97BAF7276C72E200CD5006 /* DownloadResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadResources.m; sourceTree = "<group>"; };
+		BB97BAF8276C72E200CD5006 /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
+		BB97BAF9276C72E200CD5006 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BB97BAFA276C72E200CD5006 /* DownloadResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadResources.h; sourceTree = "<group>"; };
+		BB97BAFB276C72E200CD5006 /* FileData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileData.h; sourceTree = "<group>"; };
+		BB97BAFC276C72E200CD5006 /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
+		BB97BAFE276C72E200CD5006 /* SCNMaterial+Contents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCNMaterial+Contents.h"; sourceTree = "<group>"; };
+		BB97BAFF276C72E200CD5006 /* SCNNode+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCNNode+Helpers.h"; sourceTree = "<group>"; };
+		BB97BB00276C72E200CD5006 /* UIImpactFeedbackGenerator+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImpactFeedbackGenerator+Helpers.m"; sourceTree = "<group>"; };
+		BB97BB01276C72E200CD5006 /* UIViewController+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helpers.h"; sourceTree = "<group>"; };
+		BB97BB02276C72E200CD5006 /* NSDateFormatter+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Helpers.m"; sourceTree = "<group>"; };
+		BB97BB03276C72E200CD5006 /* SCNMaterial+Contents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCNMaterial+Contents.m"; sourceTree = "<group>"; };
+		BB97BB04276C72E200CD5006 /* NSDateFormatter+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Helpers.h"; sourceTree = "<group>"; };
+		BB97BB05276C72E200CD5006 /* UIViewController+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helpers.m"; sourceTree = "<group>"; };
+		BB97BB06276C72E200CD5006 /* UIImpactFeedbackGenerator+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImpactFeedbackGenerator+Helpers.h"; sourceTree = "<group>"; };
+		BB97BB07276C72E200CD5006 /* SCNNode+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCNNode+Helpers.m"; sourceTree = "<group>"; };
+		BB97BB09276C72E300CD5006 /* UrlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlService.h; sourceTree = "<group>"; };
+		BB97BB0F276C72E300CD5006 /* UrlService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlService.m; sourceTree = "<group>"; };
+		BB97BB992771B84000CD5006 /* ARController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARController.m; sourceTree = "<group>"; };
+		BB97BB9A2771B84000CD5006 /* ARPlaneRendererDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPlaneRendererDelegate.h; sourceTree = "<group>"; };
+		BB97BB9B2771B84000CD5006 /* ARPlaneRendererDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARPlaneRendererDelegate.m; sourceTree = "<group>"; };
+		BB97BB9C2771B84000CD5006 /* ARController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB77DDA92761AC2200217F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77DDB32761AC2300217F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB77DDB72761AC2300217F64 /* VRARFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB77DDA22761AC2200217F64 = {
+			isa = PBXGroup;
+			children = (
+				BB77DDAE2761AC2200217F64 /* VRARFramework */,
+				BB77DDBA2761AC2300217F64 /* VRARFrameworkTests */,
+				BB77DDAD2761AC2200217F64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB77DDAD2761AC2200217F64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB77DDAC2761AC2200217F64 /* VRARFramework.framework */,
+				BB77DDB62761AC2300217F64 /* VRARFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB77DDAE2761AC2200217F64 /* VRARFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BB97BB08276C72E300CD5006 /* ARWrapper */,
+				BB97BAFD276C72E200CD5006 /* Categories */,
+				BB97BADB276C72E200CD5006 /* Gestures */,
+				BB97BACC276C72E200CD5006 /* Nodes */,
+				BB97BAF4276C72E200CD5006 /* Utils */,
+				BB77DE9E2761E01D00217F64 /* Resources */,
+				BB77DDAF2761AC2200217F64 /* VRARFramework.h */,
+				BB77DDB02761AC2200217F64 /* VRARFramework.docc */,
+			);
+			path = VRARFramework;
+			sourceTree = "<group>";
+		};
+		BB77DDBA2761AC2300217F64 /* VRARFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB77DDBB2761AC2300217F64 /* VRARFrameworkTests.m */,
+			);
+			path = VRARFrameworkTests;
+			sourceTree = "<group>";
+		};
+		BB77DE9E2761E01D00217F64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB77DE9F2761E01D00217F64 /* Assets.xcassets */,
+				BB77DEA02761E01D00217F64 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			path = ../../../GitHub/ARP/ARPlayer/Resources;
+			sourceTree = "<group>";
+		};
+		BB97BACC276C72E200CD5006 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				BB97BACD276C72E200CD5006 /* PlaneRendererNode.m */,
+				BB97BACE276C72E200CD5006 /* ControlNode.h */,
+				BB97BACF276C72E200CD5006 /* ARNode.m */,
+				BB97BAD0276C72E200CD5006 /* VideoRendererNode.h */,
+				BB97BAD1276C72E200CD5006 /* MediaPlayerNode.m */,
+				BB97BAD2276C72E200CD5006 /* TVNode.h */,
+				BB97BAD3276C72E200CD5006 /* ControlNode.m */,
+				BB97BAD4276C72E200CD5006 /* PlaneRendererNode.h */,
+				BB97BAD5276C72E200CD5006 /* VideoRendererNode.m */,
+				BB97BAD6276C72E200CD5006 /* ARNode.h */,
+				BB97BAD7276C72E200CD5006 /* TVNode.m */,
+				BB97BAD8276C72E200CD5006 /* Protocols */,
+				BB97BADA276C72E200CD5006 /* MediaPlayerNode.h */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		BB97BAD8276C72E200CD5006 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BB97BAD9276C72E200CD5006 /* InteractableProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BB97BADB276C72E200CD5006 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				BB97BADC276C72E200CD5006 /* NodeScaleHandler.m */,
+				BB97BADD276C72E200CD5006 /* NodeInsertionHandler.m */,
+				BB97BADE276C72E200CD5006 /* NodePositionHandler.m */,
+				BB97BADF276C72E200CD5006 /* SceneGestureRecognizerDelegate.h */,
+				BB97BAE0276C72E200CD5006 /* NodePlaybackHandler.m */,
+				BB97BAE1276C72E200CD5006 /* NodeRotationHandler.m */,
+				BB97BAE2276C72E200CD5006 /* NodePositionHandler.h */,
+				BB97BAE3276C72E200CD5006 /* NodeInsertionHandler.h */,
+				BB97BAE4276C72E200CD5006 /* NodeScaleHandler.h */,
+				BB97BAE5276C72E200CD5006 /* SceneGestureRecognizerDelegate.m */,
+				BB97BAE6276C72E200CD5006 /* NodePlaybackHandler.h */,
+				BB97BAE7276C72E200CD5006 /* Protocols */,
+				BB97BAE9276C72E200CD5006 /* NodeRotationHandler.h */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		BB97BAE7276C72E200CD5006 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BB97BAE8276C72E200CD5006 /* GestureHandleProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BB97BAF4276C72E200CD5006 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB97BAF5276C72E200CD5006 /* Constants.m */,
+				BB97BAF6276C72E200CD5006 /* FileData.m */,
+				BB97BAF7276C72E200CD5006 /* DownloadResources.m */,
+				BB97BAF8276C72E200CD5006 /* SettingsManager.h */,
+				BB97BAF9276C72E200CD5006 /* Constants.h */,
+				BB97BAFA276C72E200CD5006 /* DownloadResources.h */,
+				BB97BAFB276C72E200CD5006 /* FileData.h */,
+				BB97BAFC276C72E200CD5006 /* SettingsManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB97BAFD276C72E200CD5006 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BB97BAFE276C72E200CD5006 /* SCNMaterial+Contents.h */,
+				BB97BAFF276C72E200CD5006 /* SCNNode+Helpers.h */,
+				BB97BB00276C72E200CD5006 /* UIImpactFeedbackGenerator+Helpers.m */,
+				BB97BB01276C72E200CD5006 /* UIViewController+Helpers.h */,
+				BB97BB02276C72E200CD5006 /* NSDateFormatter+Helpers.m */,
+				BB97BB03276C72E200CD5006 /* SCNMaterial+Contents.m */,
+				BB97BB04276C72E200CD5006 /* NSDateFormatter+Helpers.h */,
+				BB97BB05276C72E200CD5006 /* UIViewController+Helpers.m */,
+				BB97BB06276C72E200CD5006 /* UIImpactFeedbackGenerator+Helpers.h */,
+				BB97BB07276C72E200CD5006 /* SCNNode+Helpers.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BB97BB08276C72E300CD5006 /* ARWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				BB97BB09276C72E300CD5006 /* UrlService.h */,
+				BB97BB0F276C72E300CD5006 /* UrlService.m */,
+				BB97BB9C2771B84000CD5006 /* ARController.h */,
+				BB97BB992771B84000CD5006 /* ARController.m */,
+				BB97BB9A2771B84000CD5006 /* ARPlaneRendererDelegate.h */,
+				BB97BB9B2771B84000CD5006 /* ARPlaneRendererDelegate.m */,
+			);
+			path = ARWrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BB77DDA72761AC2200217F64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB97BBA02771B84000CD5006 /* ARController.h in Headers */,
+				BB97BB3D276C72E300CD5006 /* FileData.h in Headers */,
+				BB97BB16276C72E300CD5006 /* ControlNode.h in Headers */,
+				BB97BB2D276C72E300CD5006 /* GestureHandleProtocol.h in Headers */,
+				BB97BB20276C72E300CD5006 /* InteractableProtocol.h in Headers */,
+				BB97BB3C276C72E300CD5006 /* DownloadResources.h in Headers */,
+				BB97BB25276C72E300CD5006 /* SceneGestureRecognizerDelegate.h in Headers */,
+				BB97BB18276C72E300CD5006 /* VideoRendererNode.h in Headers */,
+				BB77DDBD2761AC2300217F64 /* VRARFramework.h in Headers */,
+				BB97BB2C276C72E300CD5006 /* NodePlaybackHandler.h in Headers */,
+				BB97BB47276C72E300CD5006 /* UIImpactFeedbackGenerator+Helpers.h in Headers */,
+				BB97BB40276C72E300CD5006 /* SCNNode+Helpers.h in Headers */,
+				BB97BB3F276C72E300CD5006 /* SCNMaterial+Contents.h in Headers */,
+				BB97BB3A276C72E300CD5006 /* SettingsManager.h in Headers */,
+				BB97BB3B276C72E300CD5006 /* Constants.h in Headers */,
+				BB97BB49276C72E300CD5006 /* UrlService.h in Headers */,
+				BB97BB21276C72E300CD5006 /* MediaPlayerNode.h in Headers */,
+				BB97BB45276C72E300CD5006 /* NSDateFormatter+Helpers.h in Headers */,
+				BB97BB1C276C72E300CD5006 /* PlaneRendererNode.h in Headers */,
+				BB97BB28276C72E300CD5006 /* NodePositionHandler.h in Headers */,
+				BB97BB1A276C72E300CD5006 /* TVNode.h in Headers */,
+				BB97BB1E276C72E300CD5006 /* ARNode.h in Headers */,
+				BB97BB42276C72E300CD5006 /* UIViewController+Helpers.h in Headers */,
+				BB97BB29276C72E300CD5006 /* NodeInsertionHandler.h in Headers */,
+				BB97BB2A276C72E300CD5006 /* NodeScaleHandler.h in Headers */,
+				BB97BB9E2771B84000CD5006 /* ARPlaneRendererDelegate.h in Headers */,
+				BB97BB2E276C72E300CD5006 /* NodeRotationHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BB77DDAB2761AC2200217F64 /* VRARFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB77DDC02761AC2300217F64 /* Build configuration list for PBXNativeTarget "VRARFramework" */;
+			buildPhases = (
+				BB77DDA72761AC2200217F64 /* Headers */,
+				BB77DDA82761AC2200217F64 /* Sources */,
+				BB77DDA92761AC2200217F64 /* Frameworks */,
+				BB77DDAA2761AC2200217F64 /* Resources */,
+				BB77DE952761D3FC00217F64 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VRARFramework;
+			productName = VRARFramework;
+			productReference = BB77DDAC2761AC2200217F64 /* VRARFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB77DDB52761AC2300217F64 /* VRARFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB77DDC32761AC2300217F64 /* Build configuration list for PBXNativeTarget "VRARFrameworkTests" */;
+			buildPhases = (
+				BB77DDB22761AC2300217F64 /* Sources */,
+				BB77DDB32761AC2300217F64 /* Frameworks */,
+				BB77DDB42761AC2300217F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB77DDB92761AC2300217F64 /* PBXTargetDependency */,
+			);
+			name = VRARFrameworkTests;
+			productName = VRARFrameworkTests;
+			productReference = BB77DDB62761AC2300217F64 /* VRARFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB77DDA32761AC2200217F64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					BB77DDAB2761AC2200217F64 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BB77DDB52761AC2300217F64 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = BB77DDA62761AC2200217F64 /* Build configuration list for PBXProject "VRARFramework" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB77DDA22761AC2200217F64;
+			productRefGroup = BB77DDAD2761AC2200217F64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB77DDAB2761AC2200217F64 /* VRARFramework */,
+				BB77DDB52761AC2300217F64 /* VRARFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB77DDAA2761AC2200217F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB77DF012761E01E00217F64 /* Assets.xcassets in Resources */,
+				BB77DF022761E01E00217F64 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77DDB42761AC2300217F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB77DE952761D3FC00217F64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to inser# Type a script or drag a script file from your workspace to insert its path.\n# Sets the target folders and the final framework product.\n\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n\n# 例如: FMK_NAME = \"SDKFramework\"\n\nFMK_NAME=${PROJECT_NAME}\n\nif [ \"${ACTION}\" = \"build\" ]\nthen\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\nDEVICE_DIR=${BUILD_ROOT}/${CONFIGURATION}-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${BUILD_ROOT}/${CONFIGURATION}-iphonesimulator/${FMK_NAME}.framework\n\n# 如果真机包或模拟包不存在，则退出合并\nif [ ! -d \"${DEVICE_DIR}\" ] || [ ! -d \"${SIMULATOR_DIR}\" ]\nthen\nexit 0\nfi\n\n# 如果合并包已经存在，则替换\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# 使用lipo命令将其合并成一个通用framework  \n# 最后将生成的通用framework放置在工程根目录下新建的Products目录下  \nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\n#合并完成后打开目录\nopen \"${SRCROOT}/Products\"\n\nfi\n\n\nt its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB77DDA82761AC2200217F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB97BB17276C72E300CD5006 /* ARNode.m in Sources */,
+				BB97BB9F2771B84000CD5006 /* ARPlaneRendererDelegate.m in Sources */,
+				BB97BB39276C72E300CD5006 /* DownloadResources.m in Sources */,
+				BB97BB24276C72E300CD5006 /* NodePositionHandler.m in Sources */,
+				BB97BB19276C72E300CD5006 /* MediaPlayerNode.m in Sources */,
+				BB97BB23276C72E300CD5006 /* NodeInsertionHandler.m in Sources */,
+				BB97BB4F276C72E300CD5006 /* UrlService.m in Sources */,
+				BB97BB9D2771B84000CD5006 /* ARController.m in Sources */,
+				BB77DDB12761AC2200217F64 /* VRARFramework.docc in Sources */,
+				BB97BB27276C72E300CD5006 /* NodeRotationHandler.m in Sources */,
+				BB97BB1F276C72E300CD5006 /* TVNode.m in Sources */,
+				BB97BB22276C72E300CD5006 /* NodeScaleHandler.m in Sources */,
+				BB97BB48276C72E300CD5006 /* SCNNode+Helpers.m in Sources */,
+				BB97BB2B276C72E300CD5006 /* SceneGestureRecognizerDelegate.m in Sources */,
+				BB97BB41276C72E300CD5006 /* UIImpactFeedbackGenerator+Helpers.m in Sources */,
+				BB97BB15276C72E300CD5006 /* PlaneRendererNode.m in Sources */,
+				BB97BB1D276C72E300CD5006 /* VideoRendererNode.m in Sources */,
+				BB97BB46276C72E300CD5006 /* UIViewController+Helpers.m in Sources */,
+				BB97BB3E276C72E300CD5006 /* SettingsManager.m in Sources */,
+				BB97BB1B276C72E300CD5006 /* ControlNode.m in Sources */,
+				BB97BB26276C72E300CD5006 /* NodePlaybackHandler.m in Sources */,
+				BB97BB37276C72E300CD5006 /* Constants.m in Sources */,
+				BB97BB44276C72E300CD5006 /* SCNMaterial+Contents.m in Sources */,
+				BB97BB43276C72E300CD5006 /* NSDateFormatter+Helpers.m in Sources */,
+				BB97BB38276C72E300CD5006 /* FileData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77DDB22761AC2300217F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB77DDBC2761AC2300217F64 /* VRARFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB77DDB92761AC2300217F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB77DDAB2761AC2200217F64 /* VRARFramework */;
+			targetProxy = BB77DDB82761AC2300217F64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB77DEA02761E01D00217F64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB77DEA12761E01D00217F64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB77DDBE2761AC2300217F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB77DDBF2761AC2300217F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB77DDC12761AC2300217F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V7657UBAHL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ply.demo.VRARFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB77DDC22761AC2300217F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V7657UBAHL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ply.demo.VRARFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB77DDC42761AC2300217F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7657UBAHL;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ply.demo.VRARFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB77DDC52761AC2300217F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7657UBAHL;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ply.demo.VRARFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB77DDA62761AC2200217F64 /* Build configuration list for PBXProject "VRARFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB77DDBE2761AC2300217F64 /* Debug */,
+				BB77DDBF2761AC2300217F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB77DDC02761AC2300217F64 /* Build configuration list for PBXNativeTarget "VRARFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB77DDC12761AC2300217F64 /* Debug */,
+				BB77DDC22761AC2300217F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB77DDC32761AC2300217F64 /* Build configuration list for PBXNativeTarget "VRARFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB77DDC42761AC2300217F64 /* Debug */,
+				BB77DDC52761AC2300217F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB77DDA32761AC2200217F64 /* Project object */;
+}
