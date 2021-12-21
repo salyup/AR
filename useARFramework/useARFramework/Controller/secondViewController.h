@@ -2,8 +2,8 @@
 //  secondViewController.h
 //  useARFramework
 //
-//  Created by CrabMan on 16/5/18.
-//  Copyright © 2016年 CrabMan. All rights reserved.
+//  Created by ply on 16/5/18.
+//  Copyright © ABC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

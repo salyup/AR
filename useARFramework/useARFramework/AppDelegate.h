@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  useARFramework
 //
-//  Created by CrabMan on 16/5/23.
-//  Copyright © 2016年 CrabMan. All rights reserved.
+//  Created by ply on 21/12/20.
+//  Copyright © ABC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
