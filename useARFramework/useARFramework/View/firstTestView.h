@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-
-typedef void(^MyBlock)();
-
 @interface firstTestView : UIView
-
-@property (nonatomic,strong) MyBlock block;
 
 @end
