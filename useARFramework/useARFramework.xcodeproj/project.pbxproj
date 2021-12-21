@@ -19,7 +19,6 @@
 		2318AD061CF32546005743F1 /* UIView+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2318AD041CF32546005743F1 /* UIView+UIViewController.m */; };
 		BB97B9CD276B387C00CD5006 /* firstTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97B9CA276B387C00CD5006 /* firstTestView.m */; };
 		BB97BBA52771B99200CD5006 /* VRARFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB97BBA42771B99200CD5006 /* VRARFramework.framework */; };
-		BB97BBA62771B99700CD5006 /* VRARFramework.framework in Resources */ = {isa = PBXBuildFile; fileRef = BB97BBA42771B99200CD5006 /* VRARFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,7 +285,6 @@
 				2318ACB51CF32417005743F1 /* LaunchScreen.storyboard in Resources */,
 				2318ACB21CF32417005743F1 /* Assets.xcassets in Resources */,
 				2318ACB01CF32417005743F1 /* Main.storyboard in Resources */,
-				BB97BBA62771B99700CD5006 /* VRARFramework.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

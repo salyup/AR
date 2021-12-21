@@ -24,10 +24,6 @@
     
 }
 
- - (void)viewDidUnload {
-     [super viewDidUnload];
-     NSLog(@"312428974837498274");
- }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
