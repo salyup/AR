@@ -8,6 +8,7 @@
 
 #import "firstTestView.h"
 #import <VRARFramework/ARController.h>
+#import <VRARFramework/ARControllerOptions.h>
 #import "UIView+UIViewController.h"
 
 @implementation firstTestView
@@ -27,8 +28,15 @@
 
 - (void)toarpage {
     NSArray *imageUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/js_video.jpeg", @"http://192.168.84.239:8088/public/ai_model.jpeg",@"http://192.168.84.239:8088/public/java_model.jpeg",@"http://192.168.84.239:8088/public/test_model.jpeg",@"http://192.168.84.239:8088/public/cube_model.jpeg",nil];
-    ARController *playerViewController = [[ARController alloc] initWithResourceURL:imageUrlArray];
-
+    ARControllerOptions *option = [[ARControllerOptions alloc] init];
+    option.imageUrlArray = imageUrlArray;
+    option.showPlanes = YES;
+    option.vibrateOnTouch = YES;
+    option.animateOnTouch = YES;
+    option.scaleAllowed = YES;
+    option.rotationAllowed = YES;
+    option.repositionAllowed = YES;
+    ARController *playerViewController = [[ARController alloc] initWithOptions:option];
     [self.navigationController pushViewController:playerViewController animated:YES];
 }
 
@@ -37,11 +45,6 @@
 //    NSBundle* languageBundle = [NSBundle bundleWithPath:resourceBundlePath];
 //    [languageBundle load];
 //    NSLog(@"The bundle desc: %@",[languageBundle description]);
-    
-    NSArray *imageUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/js_video.jpeg", @"http://192.168.84.239:8088/public/ai_model.jpeg",@"http://192.168.84.239:8088/public/java_model.jpeg",@"http://192.168.84.239:8088/public/test_model.jpeg",@"http://192.168.84.239:8088/public/cube_model.jpeg",nil];
-    ARController *playerViewController = [[ARController alloc] initWithResourceURL:imageUrlArray];
-
-    [self.navigationController pushViewController:playerViewController animated:YES];
 }
 
 @end

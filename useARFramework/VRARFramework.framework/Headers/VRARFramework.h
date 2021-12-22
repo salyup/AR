@@ -20,6 +20,7 @@ FOUNDATION_EXPORT const unsigned char VRARFrameworkVersionString[];
 #import <VRARFramework/ControlNode.h>
 #import <VRARFramework/ARController.h>
 #import <VRARFramework/DownloadResources.h>
+#import <VRARFramework/ARControllerOptions.h>
 
 
 

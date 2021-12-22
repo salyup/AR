@@ -1,0 +1,6 @@
+framework module VRARFramework {
+  umbrella header "VRARFramework.h"
+
+  export *
+  module * { export * }
+}

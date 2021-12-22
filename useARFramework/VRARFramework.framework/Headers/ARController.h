@@ -9,12 +9,12 @@
 @import UIKit;
 @import SceneKit;
 @import ARKit;
+#import "ARControllerOptions.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ARController : UIViewController
-
-- (instancetype)initWithResourceURL:(NSArray *)imageUrlArray;
+- (instancetype)initWithOptions:(ARControllerOptions *)options;
 + (ARWorldTrackingConfiguration *)getARConfig ;
 
 

@@ -27,7 +27,7 @@
 @property (nonatomic, strong) ARSCNView *sceneView;
 @property (nonatomic, strong) ARPlaneRendererDelegate *planeRendererDelegate;
 @property (nonatomic, strong) SceneGestureRecognizerDelegate *sceneGestureRecognizerDelegate;
-@property (nonatomic, strong) NSArray *imageUrlArray;
+@property (nonatomic, strong) ARControllerOptions *arControllerOptions;
 
 @end
 
@@ -35,10 +35,10 @@ static ARWorldTrackingConfiguration *arconfig;
 
 @implementation ARController
 
-- (instancetype)initWithResourceURL:(NSArray *)imageUrlArray {
+- (instancetype)initWithOptions:(ARControllerOptions *)options {
     self = [super init];
     if (self) {
-        self.imageUrlArray = imageUrlArray;
+        self.arControllerOptions = options;
     }
     return self;
 }
@@ -79,7 +79,7 @@ static ARWorldTrackingConfiguration *arconfig;
 
     self.planeRendererDelegate = [ARPlaneRendererDelegate new];
     self.sceneView.delegate = self.planeRendererDelegate;
-    self.sceneView.showsStatistics = YES;
+    self.sceneView.showsStatistics = NO;
 
     SCNScene *scene = [SCNScene scene];
     self.sceneView.scene = scene;
@@ -96,12 +96,27 @@ static ARWorldTrackingConfiguration *arconfig;
         ARWorldTrackingConfiguration *configuration = [ARWorldTrackingConfiguration new];
         configuration.planeDetection = ARPlaneDetectionHorizontal;
         self.sceneView.automaticallyUpdatesLighting = YES;
-        [UrlService loadDynamicImageReference:self.imageUrlArray withConfig:configuration];
+        [UrlService loadDynamicImageReference:self.arControllerOptions.imageUrlArray withConfig:configuration];
         arconfig = configuration;
         [self.sceneView.session runWithConfiguration:configuration];
-        [SettingsManager instance].scaleAllowed = YES;
-        [SettingsManager instance].rotationAllowed = YES;
-
+        if(self.arControllerOptions.scaleAllowed){
+            [SettingsManager instance].scaleAllowed = YES;
+        }
+        if(self.arControllerOptions.rotationAllowed){
+            [SettingsManager instance].rotationAllowed = YES;
+        }
+        if(self.arControllerOptions.showPlanes){
+            [SettingsManager instance].showPlanes = YES;
+        }
+        if(self.arControllerOptions.vibrateOnTouch){
+            [SettingsManager instance].vibrateOnTouch = YES;
+        }
+        if(self.arControllerOptions.animateOnTouch){
+            [SettingsManager instance].animateOnTouch = YES;
+        }
+        if(self.arControllerOptions.repositionAllowed){
+            [SettingsManager instance].repositionAllowed = YES;
+        }
         
     } else {
         NSLog(@"[%s] ARConfiguration is not supported.", __FUNCTION__);

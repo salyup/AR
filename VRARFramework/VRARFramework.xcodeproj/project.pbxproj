@@ -11,8 +11,6 @@
 		BB77DDB72761AC2300217F64 /* VRARFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB77DDAC2761AC2200217F64 /* VRARFramework.framework */; };
 		BB77DDBC2761AC2300217F64 /* VRARFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB77DDBB2761AC2300217F64 /* VRARFrameworkTests.m */; };
 		BB77DDBD2761AC2300217F64 /* VRARFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BB77DDAF2761AC2200217F64 /* VRARFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB77DF012761E01E00217F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB77DE9F2761E01D00217F64 /* Assets.xcassets */; };
-		BB77DF022761E01E00217F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB77DEA02761E01D00217F64 /* LaunchScreen.storyboard */; };
 		BB97BB15276C72E300CD5006 /* PlaneRendererNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BACD276C72E200CD5006 /* PlaneRendererNode.m */; };
 		BB97BB16276C72E300CD5006 /* ControlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BACE276C72E200CD5006 /* ControlNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB97BB17276C72E300CD5006 /* ARNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BACF276C72E200CD5006 /* ARNode.m */; };
@@ -63,6 +61,8 @@
 		BB97BB9E2771B84000CD5006 /* ARPlaneRendererDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB9A2771B84000CD5006 /* ARPlaneRendererDelegate.h */; };
 		BB97BB9F2771B84000CD5006 /* ARPlaneRendererDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97BB9B2771B84000CD5006 /* ARPlaneRendererDelegate.m */; };
 		BB97BBA02771B84000CD5006 /* ARController.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB9C2771B84000CD5006 /* ARController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBE162552771D67D00B40F7C /* ARControllerOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = BBE162532771D67D00B40F7C /* ARControllerOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBE162562771D67D00B40F7C /* ARControllerOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE162542771D67D00B40F7C /* ARControllerOptions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +81,6 @@
 		BB77DDB02761AC2200217F64 /* VRARFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VRARFramework.docc; sourceTree = "<group>"; };
 		BB77DDB62761AC2300217F64 /* VRARFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRARFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB77DDBB2761AC2300217F64 /* VRARFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRARFrameworkTests.m; sourceTree = "<group>"; };
-		BB77DE9F2761E01D00217F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BB77DEA12761E01D00217F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB97BACD276C72E200CD5006 /* PlaneRendererNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaneRendererNode.m; sourceTree = "<group>"; };
 		BB97BACE276C72E200CD5006 /* ControlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlNode.h; sourceTree = "<group>"; };
 		BB97BACF276C72E200CD5006 /* ARNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARNode.m; sourceTree = "<group>"; };
@@ -133,6 +131,8 @@
 		BB97BB9A2771B84000CD5006 /* ARPlaneRendererDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPlaneRendererDelegate.h; sourceTree = "<group>"; };
 		BB97BB9B2771B84000CD5006 /* ARPlaneRendererDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARPlaneRendererDelegate.m; sourceTree = "<group>"; };
 		BB97BB9C2771B84000CD5006 /* ARController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARController.h; sourceTree = "<group>"; };
+		BBE162532771D67D00B40F7C /* ARControllerOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARControllerOptions.h; sourceTree = "<group>"; };
+		BBE162542771D67D00B40F7C /* ARControllerOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARControllerOptions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,7 +180,6 @@
 				BB97BADB276C72E200CD5006 /* Gestures */,
 				BB97BACC276C72E200CD5006 /* Nodes */,
 				BB97BAF4276C72E200CD5006 /* Utils */,
-				BB77DE9E2761E01D00217F64 /* Resources */,
 				BB77DDAF2761AC2200217F64 /* VRARFramework.h */,
 				BB77DDB02761AC2200217F64 /* VRARFramework.docc */,
 			);
@@ -193,16 +192,6 @@
 				BB77DDBB2761AC2300217F64 /* VRARFrameworkTests.m */,
 			);
 			path = VRARFrameworkTests;
-			sourceTree = "<group>";
-		};
-		BB77DE9E2761E01D00217F64 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BB77DE9F2761E01D00217F64 /* Assets.xcassets */,
-				BB77DEA02761E01D00217F64 /* LaunchScreen.storyboard */,
-			);
-			name = Resources;
-			path = ../../../GitHub/ARP/ARPlayer/Resources;
 			sourceTree = "<group>";
 		};
 		BB97BACC276C72E200CD5006 /* Nodes */ = {
@@ -302,6 +291,8 @@
 				BB97BB992771B84000CD5006 /* ARController.m */,
 				BB97BB9A2771B84000CD5006 /* ARPlaneRendererDelegate.h */,
 				BB97BB9B2771B84000CD5006 /* ARPlaneRendererDelegate.m */,
+				BBE162532771D67D00B40F7C /* ARControllerOptions.h */,
+				BBE162542771D67D00B40F7C /* ARControllerOptions.m */,
 			);
 			path = ARWrapper;
 			sourceTree = "<group>";
@@ -313,6 +304,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE162552771D67D00B40F7C /* ARControllerOptions.h in Headers */,
 				BB97BBA02771B84000CD5006 /* ARController.h in Headers */,
 				BB97BB3D276C72E300CD5006 /* FileData.h in Headers */,
 				BB97BB16276C72E300CD5006 /* ControlNode.h in Headers */,
@@ -424,8 +416,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB77DF012761E01E00217F64 /* Assets.xcassets in Resources */,
-				BB77DF022761E01E00217F64 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +444,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to inser# Type a script or drag a script file from your workspace to insert its path.\n# Sets the target folders and the final framework product.\n\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n\n# 例如: FMK_NAME = \"SDKFramework\"\n\nFMK_NAME=${PROJECT_NAME}\n\nif [ \"${ACTION}\" = \"build\" ]\nthen\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\nDEVICE_DIR=${BUILD_ROOT}/${CONFIGURATION}-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${BUILD_ROOT}/${CONFIGURATION}-iphonesimulator/${FMK_NAME}.framework\n\n# 如果真机包或模拟包不存在，则退出合并\nif [ ! -d \"${DEVICE_DIR}\" ] || [ ! -d \"${SIMULATOR_DIR}\" ]\nthen\nexit 0\nfi\n\n# 如果合并包已经存在，则替换\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# 使用lipo命令将其合并成一个通用framework  \n# 最后将生成的通用framework放置在工程根目录下新建的Products目录下  \nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\n#合并完成后打开目录\nopen \"${SRCROOT}/Products\"\n\nfi\n\n\nt its path.\n";
+			shellScript = "#!/bin/sh\n\nBIN_DIR=\"bin\"\nif [ ! -d \"$BIN_DIR\" ]; then\nmkdir -p \"$BIN_DIR\"\nfi\n\nBIN_DIR_TMP=\"bin_tmp\"\nif [ ! -d \"$BIN_DIR_TMP\" ]; then\nmkdir -p \"$BIN_DIR_TMP\"\nfi\n\n\n\ncp -af ${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.framework/ ${BIN_DIR_TMP}/${PLATFORM_NAME}-${TARGET_NAME}.framework\ncp -af ${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.framework/ ${BIN_DIR}/${TARGET_NAME}.framework\nlipo -create $BIN_DIR_TMP/*-${TARGET_NAME}.framework/${TARGET_NAME} -output ${BIN_DIR}/${TARGET_NAME}.framework/${TARGET_NAME}\n\n#合并完成后打开目录\nopen \"${SRCROOT}/bin\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -466,6 +456,7 @@
 				BB97BB17276C72E300CD5006 /* ARNode.m in Sources */,
 				BB97BB9F2771B84000CD5006 /* ARPlaneRendererDelegate.m in Sources */,
 				BB97BB39276C72E300CD5006 /* DownloadResources.m in Sources */,
+				BBE162562771D67D00B40F7C /* ARControllerOptions.m in Sources */,
 				BB97BB24276C72E300CD5006 /* NodePositionHandler.m in Sources */,
 				BB97BB19276C72E300CD5006 /* MediaPlayerNode.m in Sources */,
 				BB97BB23276C72E300CD5006 /* NodeInsertionHandler.m in Sources */,
@@ -508,17 +499,6 @@
 			targetProxy = BB77DDB82761AC2300217F64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BB77DEA02761E01D00217F64 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB77DEA12761E01D00217F64 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BB77DDBE2761AC2300217F64 /* Debug */ = {
@@ -576,7 +556,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -652,6 +632,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,9 +658,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
