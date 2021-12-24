@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/DownloadResources.h</key>
 		<data>
-		Y1BTr9uMjJFYFT/t/KYJtHHrSgo=
+		kyQOsHcDMJ9QNp+VKwRcPCC+Sic=
 		</data>
 		<key>Headers/FileData.h</key>
 		<data>
@@ -43,6 +43,18 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		7nvrsjg+uuDBcDkhIKlDBMDkANg=
+		</data>
+		<key>vrar.mtl</key>
+		<data>
+		az1bzeld2VIpqAUzZydaBL1atJg=
+		</data>
+		<key>vrar.obj</key>
+		<data>
+		whCkCnY1SgtzWoroIyv0Wj4YfHQ=
+		</data>
+		<key>vrar_model.jpeg</key>
+		<data>
+		TQPtXO8pACslowCc1EyB+PSpH9c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -84,11 +96,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y1BTr9uMjJFYFT/t/KYJtHHrSgo=
+			kyQOsHcDMJ9QNp+VKwRcPCC+Sic=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Pm6o0UjS6S+SfIIZ8Z6BJqO7MHn0cm8enumeEYb2ek=
+			0O+4UTKNoCbL+rVxk8E8YHHO+JO15lEOJjM2A8pDk80=
 			</data>
 		</dict>
 		<key>Headers/FileData.h</key>
@@ -144,6 +156,39 @@
 			<key>hash2</key>
 			<data>
 			gQurP+o3IG+S7t2Sy+7ojf6vdsEuiJDJ6sra2d2AYDY=
+			</data>
+		</dict>
+		<key>vrar.mtl</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			az1bzeld2VIpqAUzZydaBL1atJg=
+			</data>
+			<key>hash2</key>
+			<data>
+			qUcLG0haelR7ZpM0msTL52YdcQsMEymp5wbZrQy2RgE=
+			</data>
+		</dict>
+		<key>vrar.obj</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			whCkCnY1SgtzWoroIyv0Wj4YfHQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			fBGUbsy7Ove+07HePqnHWy6OkxVLlcVADMVXwCRtbDU=
+			</data>
+		</dict>
+		<key>vrar_model.jpeg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TQPtXO8pACslowCc1EyB+PSpH9c=
+			</data>
+			<key>hash2</key>
+			<data>
+			p0zo0f0oJcUfa6XDljUJWU5k3IhtA1iUgPh6QkmaO2k=
 			</data>
 		</dict>
 	</dict>

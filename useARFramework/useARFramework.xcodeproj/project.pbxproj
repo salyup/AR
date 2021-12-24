@@ -18,7 +18,7 @@
 		2318AD051CF32546005743F1 /* UIView+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2318AD021CF32546005743F1 /* UIView+Tap.m */; };
 		2318AD061CF32546005743F1 /* UIView+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2318AD041CF32546005743F1 /* UIView+UIViewController.m */; };
 		BB97B9CD276B387C00CD5006 /* firstTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97B9CA276B387C00CD5006 /* firstTestView.m */; };
-		BBE1626E2772B34E00B40F7C /* VRARFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE1626D2772B34E00B40F7C /* VRARFramework.framework */; };
+		BBE162822772FB0100B40F7C /* VRARFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE162812772FB0100B40F7C /* VRARFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		2318AD041CF32546005743F1 /* UIView+UIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewController.m"; sourceTree = "<group>"; };
 		BB97B9C9276B387C00CD5006 /* firstTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstTestView.h; sourceTree = "<group>"; };
 		BB97B9CA276B387C00CD5006 /* firstTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstTestView.m; sourceTree = "<group>"; };
-		BBE1626D2772B34E00B40F7C /* VRARFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VRARFramework.framework; sourceTree = SOURCE_ROOT; };
+		BBE162812772FB0100B40F7C /* VRARFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VRARFramework.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE1626E2772B34E00B40F7C /* VRARFramework.framework in Frameworks */,
+				BBE162822772FB0100B40F7C /* VRARFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +111,7 @@
 		2318ACA41CF32417005743F1 /* useARFramework */ = {
 			isa = PBXGroup;
 			children = (
-				BBE1626D2772B34E00B40F7C /* VRARFramework.framework */,
+				BBE162812772FB0100B40F7C /* VRARFramework.framework */,
 				2318ACA81CF32417005743F1 /* AppDelegate.h */,
 				2318ACA91CF32417005743F1 /* AppDelegate.m */,
 				2318ACF31CF3246B005743F1 /* View */,

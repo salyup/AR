@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)downloadFile:(NSArray *) imageUrlArray modelUrl:(NSArray *) modelUrlArray movieUrl:(NSArray *) movieUrlArray;
 - (FileData *)getImgsData:(NSString *)resourcesUrl folderName: (NSString *) fName uImg: (UIImage *)image;
 - (UIImage *)loadLocalImage:(NSString *)resourcesUrl folderName: (NSString *) fName;
+- (NSString *)resourcesFilePath:(NSString *)resourcesUrl folderName: (NSString *) fName resourcesType: (NSString *)type;
 @end
 
 NS_ASSUME_NONNULL_END
