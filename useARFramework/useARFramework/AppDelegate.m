@@ -44,8 +44,8 @@
 - (void)prepareARfile {
     NSLog(@"setupConfiguration currentThread---%@ mainThread---%@", [NSThread currentThread], [NSThread mainThread]);
     //预先下载图片
-    NSArray *imageUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/js_video.jpeg", @"http://192.168.84.239:8088/public/ai_model.jpeg",@"http://192.168.84.239:8088/public/java_model.jpeg",@"http://192.168.84.239:8088/public/test_model.jpeg",@"http://192.168.84.239:8088/public/cube_model.jpeg",nil];
-    NSArray *modelUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/ai.obj",@"http://192.168.84.239:8088/public/java.obj",@"http://192.168.84.239:8088/public/test.obj",@"http://192.168.84.239:8088/public/cube.obj",nil];
+    NSArray *imageUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/js_video.jpeg", @"http://192.168.84.239:8088/public/ai_model.jpeg",@"http://192.168.84.239:8088/public/java_model.jpeg",@"http://192.168.84.239:8088/public/test_model.jpeg",@"http://192.168.84.239:8088/public/cube_model.jpeg",@"http://192.168.84.239:8088/public/seed_model.jpeg",nil];
+    NSArray *modelUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/ai.zip",@"http://192.168.84.239:8088/public/java.zip",@"http://192.168.84.239:8088/public/test.zip",@"http://192.168.84.239:8088/public/cube.zip",@"http://192.168.84.239:8088/public/seed.zip",nil];
     NSArray *movieUrlArray = nil;
     DownloadResources *downloadResources = [[DownloadResources alloc] init];
     [downloadResources downloadFile:imageUrlArray modelUrl:modelUrlArray movieUrl:movieUrlArray];

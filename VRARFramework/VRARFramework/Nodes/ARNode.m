@@ -31,12 +31,12 @@
 }
 
 - (void)createARNode:(NSString *)name {
-    // 渲染obj模型
     NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *docpath  = [cachesPath stringByAppendingFormat:@"%@%@%@%@%@",@"/",modelFolderName,@"/",name,@".obj"];
-    NSURL * url= [NSURL URLWithString:docpath];
-    MDLAsset *mdlAsset = [[MDLAsset alloc] initWithURL:url];
-    self.arNode = [SCNScene sceneWithMDLAsset:mdlAsset].rootNode.childNodes[0];
+    // 渲染dae模型
+    NSString *unzippath  = [cachesPath stringByAppendingFormat:@"%@%@%@",@"/",modelFolderName,@"/"];
+    NSString *newPath = [NSString stringWithFormat:@"%@%@",unzippath,name];
+    SCNScene *scene = [SCNScene sceneWithURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@%@",newPath,name,@".dae"]] options:nil error:nil];
+    self.arNode = scene.rootNode;
     self.arNode.movabilityHint = SCNMovabilityHintFixed;
     [self addChildNode:self.arNode];
 }

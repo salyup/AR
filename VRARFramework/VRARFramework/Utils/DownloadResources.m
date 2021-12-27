@@ -8,6 +8,7 @@
 
 #import "DownloadResources.h"
 #import "Constants.h"
+#import "SSZipArchive.h"
 
 @interface DownloadResources ()
 @property (nonatomic,strong) NSString *cachesPath;
@@ -42,10 +43,22 @@
     for(id url in modelUrlArray){
         NSString *tmpName = [self resourcesFileName: url resourcesType:fileModel];
         NSString *path  = [self.cachesPath stringByAppendingFormat:@"%@%@%@%@",@"/",modelFolderName,@"/",tmpName];
+        NSString *unzippath  = [self.cachesPath stringByAppendingFormat:@"%@%@%@",@"/",modelFolderName,@"/"];
         if(![manager fileExistsAtPath:path]){
             [self connectionURL:url folderName:modelFolderName resourcesType:fileModel];
         }
+        NSError *error;
+        if (![SSZipArchive unzipFileAtPath:path toDestination:unzippath overwrite:YES password:nil error:&error]) {
+           NSLog(@"[%s]解压失败：%@", __FUNCTION__,error);
+        }
     }
+//    for(id url in modelUrlArray){
+//        NSString *tmpName = [self resourcesFileName: url resourcesType:fileModel];
+//        NSString *path  = [self.cachesPath stringByAppendingFormat:@"%@%@%@%@",@"/",modelFolderName,@"/",tmpName];
+//        if(![manager fileExistsAtPath:path]){
+//            [self connectionURL:url folderName:modelFolderName resourcesType:fileModel];
+//        }
+//    }
     return @"Download complete";
 }
 
@@ -106,11 +119,12 @@
         if (![resourcesName hasSuffix:@".jpeg"]) {
             resourcesName = [array[array.count-1] stringByAppendingFormat:@".jpeg"];
         }
-    }else if([type isEqualToString:fileModel]){
-        if (![resourcesName hasSuffix:@".obj"]) {
-            resourcesName = [array[array.count-1] stringByAppendingFormat:@".obj"];
-        }
     }
+//    }else if([type isEqualToString:fileModel]){
+//        if (![resourcesName hasSuffix:@".obj"]) {
+//            resourcesName = [array[array.count-1] stringByAppendingFormat:@".obj"];
+//        }
+//    }
     return resourcesName;
 }
 

@@ -40,6 +40,10 @@
 		<data>
 		fnZRH+myC5LNzZIn2q+qouSM2FU=
 		</data>
+		<key>LICENSE</key>
+		<data>
+		F6LTl+RBugQ3i5tHJ0u0h632bEQ=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		7nvrsjg+uuDBcDkhIKlDBMDkANg=
@@ -145,6 +149,17 @@
 			<key>hash2</key>
 			<data>
 			/5qqykdTmmtE9Ex3dRI5cYzIV69NKqRYAi58iTiC4MI=
+			</data>
+		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F6LTl+RBugQ3i5tHJ0u0h632bEQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z1GBwD/BMCochVTAD3vpu0IMXbydzCATQzzsFEQT3gM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

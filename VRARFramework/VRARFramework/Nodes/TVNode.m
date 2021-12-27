@@ -41,12 +41,10 @@
 //}
 - (instancetype)initWithdirection:(NSString *)direction {
     self = [self init];
-
     if (self) {
         [self createTvNode:direction];
         [self createVideoRendererNode];
     }
-    
     return self;
 }
 

@@ -54,22 +54,20 @@
        NSArray *deImageArray = config.detectionImages.allObjects;
        for (ARReferenceImage *arReferenceImage in deImageArray) {
            if([arReferenceImage.name isEqualToString: anchorNew.referenceImage.name]){
-               NSLog(@"----- the same img ------ %@",arReferenceImage.name);
+               NSLog(@"[%s]got the same img：%@", __FUNCTION__, arReferenceImage.name);
                NSArray *array = [arReferenceImage.name componentsSeparatedByString:@"_"];
                NSString *type = array[array.count-1];
                NSString *reName = array[0];
                // 后续应改为文件名是mov_****播放视频或者model_*****创建模型
                if([type isEqualToString:FileVideo]){
-                   NSLog(@"-----video");
                    // 创建播放视频node
-                   NSArray<NSURL *> *playlist = [NSArray arrayWithObjects:
-                           [NSURL URLWithString:@"http://192.168.84.239:8088/public/cat.mp4"], nil];
+                   NSString *videlurl = [NSString stringWithFormat:@"%@%@%@",@"http://192.168.84.239:8088/public/",reName,@".mp4"];
+                   NSArray<NSURL *> *playlist = [NSArray arrayWithObjects: [NSURL URLWithString:videlurl], nil];
                    MediaPlayerNode *mediaPlayerNode = [[MediaPlayerNode alloc] initWithPlaylist:playlist direction:dVertical];
                    mediaPlayerNode.position = SCNVector3Make(column.x, column.y, column.z);
                    [mediaPlayerNode play];
                    [self.sceneView.scene.rootNode addChildNode:mediaPlayerNode];
                }else if([type isEqualToString:fileModel]){
-                   NSLog(@"-----model");
                    // 创建模型展示node
                    ARNode *arNode = [[ARNode alloc] initWithModelName:reName];
                    arNode.name = objName;

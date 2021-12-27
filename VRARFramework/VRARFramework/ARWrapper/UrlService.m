@@ -39,16 +39,15 @@ static NSString * BASE_URL_FOR_UFILE = @"https://baidu.com?ufileId=";
     for(id url in urls){
         UIImage *image = [downloadResources loadLocalImage:url folderName:imageFolderName];
         NSData *imageData = UIImagePNGRepresentation(image);
-        [self copyARfiles];
-        NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-        NSString *docpath1 = [cachesPath stringByAppendingFormat:@"%@%@%@",@"/",imageFolderName,@"/vrar_model.jpeg"];
-        UIImage *uiimg1 = [UIImage imageWithContentsOfFile:docpath1];
-        CGImageRef ref1 = uiimg1.CGImage;
-        ARReferenceImage *arimg1 = [[ARReferenceImage alloc] initWithCGImage:ref1 orientation:kCGImagePropertyOrientationUp physicalWidth:0.2f];
-        arimg1.name = @"vrar_model";
-        [array addObject:arimg1];
+//        [self copyARfiles];
+//        NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+//        NSString *docpath1 = [cachesPath stringByAppendingFormat:@"%@%@%@",@"/",imageFolderName,@"/vrar_model.jpeg"];
+//        UIImage *uiimg1 = [UIImage imageWithContentsOfFile:docpath1];
+//        CGImageRef ref1 = uiimg1.CGImage;
+//        ARReferenceImage *arimg1 = [[ARReferenceImage alloc] initWithCGImage:ref1 orientation:kCGImagePropertyOrientationUp physicalWidth:0.2f];
+//        arimg1.name = @"vrar_model";
+//        [array addObject:arimg1];
         if (imageData != nil) {
-            NSLog(@"[%s] imageData != nil.", __FUNCTION__);
             // use download data
             FileData *fdata = [FileData alloc];
             fdata = [downloadResources getImgsData:url folderName:imageFolderName uImg:image];

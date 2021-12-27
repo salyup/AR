@@ -20,14 +20,12 @@
 - (instancetype)initWithParentNode:(SCNNode *)node {
     self = [super init];
     [NSFileManager defaultManager];
-
     if (self) {
         SCNVector3 vector = [node boundingBox];
         self.geometry = [SCNBox boxWithWidth:vector.x - 0.04f
                                       height:vector.z - 0.06f
                                       length:0.005f
                                chamferRadius:0.0f];
-
         [self setupNode];
     }
 
@@ -38,7 +36,6 @@
     self.position = SCNVector3Make(0.0f, -0.008f, 0.01f);
     self.eulerAngles = SCNVector3Make(M_PI_2, 0.0f, 0.0f);
     self.name = kVideoRendererNode;
-
     self.geometry.firstMaterial = [SCNMaterial materialWithColor:[UIColor blackColor]];
 }
 

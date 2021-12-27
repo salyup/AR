@@ -27,7 +27,6 @@
 
 - (instancetype)initWithPlaylist:(NSArray<NSURL *> *)playlist direction:(NSString *)direction {
     self = [self init];
-    
     if (self) {
         self.playlist = playlist;
         [self constructNodes:direction];
