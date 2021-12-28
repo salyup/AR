@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ARNode : SCNNode
-- (instancetype)initWithModelName:(NSString *)name ;
+- (instancetype)initWithModelName:(NSString *)name nodeScale:(float)nodescale ;
 @end
 
 NS_ASSUME_NONNULL_END

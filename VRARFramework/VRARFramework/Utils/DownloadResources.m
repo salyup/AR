@@ -34,8 +34,9 @@
         NSData *imageData = UIImagePNGRepresentation(image);
         if (imageData == nil) {
             //如果存在文件不需要再次下载，如果不存在则下载，若下载失败返回failed
-            if(![[self connectionURL:url folderName:imageFolderName resourcesType:fileImage] isEqualToString:@"success"]){
-                return @"Download failed";
+            NSString *reflag = [self connectionURL:url folderName:imageFolderName resourcesType:fileImage];
+            if(![reflag isEqualToString:@"success"]){
+                return reflag;
             }
         }
     }
@@ -59,7 +60,7 @@
 //            [self connectionURL:url folderName:modelFolderName resourcesType:fileModel];
 //        }
 //    }
-    return @"Download complete";
+    return @"success";
 }
 
 //获取图片data数据
@@ -75,11 +76,12 @@
 //下载文件
 - (NSString *)connectionURL:(NSString *) resourcesUrl folderName: (NSString *) fName resourcesType: (NSString *)type {
     __block NSString *re = @"success";
+    __block NSString *flag = @"success";
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); //创建信号量
     NSURL *url = [NSURL URLWithString:[resourcesUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setTimeoutInterval:30];
 //    [request setHTTPMethod:@"POST"];
-//    [request setTimeoutInterval:60];
 //    [request setAllHTTPHeaderFields:nil];
 //    [request setHTTPBody:(NSData *)[@"user_name=admin&user_password=admin" dataUsingEncoding:NSUTF8StringEncoding]];
     NSURLSession *session = [NSURLSession sharedSession];
@@ -89,13 +91,14 @@
         }
         if (error != nil){
             re = [@"fail__" stringByAppendingFormat:@"%@",error.domain];
+            flag = error.domain;
         }
         dispatch_semaphore_signal(semaphore);   //发送信号
     }];
     [task resume];
     dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);  //等待
     NSLog(@"resources: %@ download %@",resourcesUrl,re);
-    return re;
+    return flag;
 }
 
 

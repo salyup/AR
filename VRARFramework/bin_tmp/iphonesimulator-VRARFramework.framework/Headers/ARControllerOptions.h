@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL scaleAllowed;
 @property (nonatomic) BOOL rotationAllowed;
 @property (nonatomic) BOOL repositionAllowed;
+@property (nonatomic) float modelScale;
 
 @end
 

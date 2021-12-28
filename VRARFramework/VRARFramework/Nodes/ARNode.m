@@ -20,17 +20,17 @@
 @end
 @implementation ARNode
 
-- (instancetype)initWithModelName:(NSString *)name {
+- (instancetype)initWithModelName:(NSString *)name nodeScale:(float)nodescale{
     self = [self init];
 
     if (self) {
-        [self createARNode:name];
+        [self createARNode:name nodeScale:nodescale];
     }
     
     return self;
 }
 
-- (void)createARNode:(NSString *)name {
+- (void)createARNode:(NSString *)name nodeScale:(float)nodescale{
     NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     // 渲染dae模型
     NSString *unzippath  = [cachesPath stringByAppendingFormat:@"%@%@%@",@"/",modelFolderName,@"/"];
@@ -38,6 +38,10 @@
     SCNScene *scene = [SCNScene sceneWithURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@%@",newPath,name,@".dae"]] options:nil error:nil];
     self.arNode = scene.rootNode;
     self.arNode.movabilityHint = SCNMovabilityHintFixed;
+    CGFloat pinchScaleX = nodescale * self.arNode.scale.x;
+    CGFloat pinchScaleY = nodescale * self.arNode.scale.y;
+    CGFloat pinchScaleZ = nodescale * self.arNode.scale.z;
+    self.arNode.scale = SCNVector3Make(pinchScaleX, pinchScaleY, pinchScaleZ);
     [self addChildNode:self.arNode];
 }
 

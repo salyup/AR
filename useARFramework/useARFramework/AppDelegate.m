@@ -10,7 +10,10 @@
 #import "ViewController.h"
 #import <VRARFramework/DownloadResources.h>
 #import <AVFoundation/AVFoundation.h>
-
+#import <SystemConfiguration/CaptiveNetwork.h>
+#import <CFNetwork/CFNetwork.h>
+#import <SystemConfiguration/SCNetworkReachability.h>
+#import <CoreTelephony/CTCellularData.h>
 @interface AppDelegate ()
 
 @end
@@ -24,6 +27,7 @@
     _window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
     [_window makeKeyAndVisible];
     [self alertToEncourageCameraAccessInitially];
+    [self getNetworkStatus];
     [NSThread detachNewThreadSelector:@selector(prepareARfile) toTarget:self withObject:nil];
     return YES;
 }
@@ -34,21 +38,27 @@
             [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
                 AVAuthorizationStatus status =[AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
                         if (status == AVAuthorizationStatusAuthorized){
+                            NSLog(@"1233");
                         }else if(status == AVAuthorizationStatusDenied ||status ==AVAuthorizationStatusRestricted){//拒绝了权限
+                            NSLog(@"3455");
                         }
                     }];
     }
-                
+}
+-(void)getNetworkStatus{
+
 }
 
 - (void)prepareARfile {
-    NSLog(@"setupConfiguration currentThread---%@ mainThread---%@", [NSThread currentThread], [NSThread mainThread]);
     //预先下载图片
     NSArray *imageUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/js_video.jpeg", @"http://192.168.84.239:8088/public/ai_model.jpeg",@"http://192.168.84.239:8088/public/java_model.jpeg",@"http://192.168.84.239:8088/public/test_model.jpeg",@"http://192.168.84.239:8088/public/cube_model.jpeg",@"http://192.168.84.239:8088/public/seed_model.jpeg",nil];
     NSArray *modelUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/ai.zip",@"http://192.168.84.239:8088/public/java.zip",@"http://192.168.84.239:8088/public/test.zip",@"http://192.168.84.239:8088/public/cube.zip",@"http://192.168.84.239:8088/public/seed.zip",nil];
     NSArray *movieUrlArray = nil;
     DownloadResources *downloadResources = [[DownloadResources alloc] init];
-    [downloadResources downloadFile:imageUrlArray modelUrl:modelUrlArray movieUrl:movieUrlArray];
+    NSString *reflag = [downloadResources downloadFile:imageUrlArray modelUrl:modelUrlArray movieUrl:movieUrlArray];
+    if(![reflag isEqualToString:@"success"]){
+        NSLog(@"download faild, please check network");
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

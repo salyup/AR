@@ -76,8 +76,10 @@ static ARWorldTrackingConfiguration *arconfig;
     ARSCNView *sceneView1 = [ARSCNView new];
     self.sceneView = sceneView1;
     self.view = sceneView1;
-
-    self.planeRendererDelegate = [ARPlaneRendererDelegate new];
+    
+    self.planeRendererDelegate = [[ARPlaneRendererDelegate alloc] initWithModelScale:self.arControllerOptions.modelScale];
+    NSLog(@"1312333131%@",self.planeRendererDelegate );
+//    self.planeRendererDelegate = [ARPlaneRendererDelegate new];
     self.sceneView.delegate = self.planeRendererDelegate;
     self.sceneView.showsStatistics = NO;
 

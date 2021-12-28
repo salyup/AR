@@ -36,6 +36,7 @@
     option.scaleAllowed = YES;
     option.rotationAllowed = YES;
     option.repositionAllowed = YES;
+    option.modelScale = 0.05;
     ARController *playerViewController = [[ARController alloc] initWithOptions:option];
     [self.navigationController pushViewController:playerViewController animated:YES];
 }

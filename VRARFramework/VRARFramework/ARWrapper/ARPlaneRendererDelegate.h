@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ARPlaneRendererDelegate : NSObject <ARSCNViewDelegate>
 @property (strong,nonatomic) ARSCNView *sceneView;
-
+- (instancetype)initWithModelScale:(float)nodescale;
 @end
 
 NS_ASSUME_NONNULL_END

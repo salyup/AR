@@ -24,16 +24,18 @@
 @interface ARPlaneRendererDelegate ()
 
 @property (nonatomic, strong) NSMutableDictionary *planes;
+@property (nonatomic) float nodescale;
 
 @end
 
 @implementation ARPlaneRendererDelegate
 
-- (instancetype)init {
+- (instancetype)initWithModelScale:(float)nodescale {
     self = [super init];
 
     if (self) {
         self.planes = [NSMutableDictionary new];
+        self.nodescale = nodescale;
         [self subscribeForNotifications];
     }
 
@@ -69,7 +71,7 @@
                    [self.sceneView.scene.rootNode addChildNode:mediaPlayerNode];
                }else if([type isEqualToString:fileModel]){
                    // 创建模型展示node
-                   ARNode *arNode = [[ARNode alloc] initWithModelName:reName];
+                   ARNode *arNode = [[ARNode alloc] initWithModelName:reName nodeScale:self.nodescale];
                    arNode.name = objName;
                    arNode.position = SCNVector3Make(column.x, column.y, column.z);
                    [self.sceneView.scene.rootNode addChildNode:arNode];
