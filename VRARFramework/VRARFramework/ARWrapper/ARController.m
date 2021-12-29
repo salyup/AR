@@ -58,10 +58,6 @@ static ARWorldTrackingConfiguration *arconfig;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-//    ARWorldTrackingConfiguration *configuration = [ARWorldTrackingConfiguration new];
-//    [self.sceneView.session runWithConfiguration:configuration];
-    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -76,10 +72,11 @@ static ARWorldTrackingConfiguration *arconfig;
     ARSCNView *sceneView1 = [ARSCNView new];
     self.sceneView = sceneView1;
     self.view = sceneView1;
-    
-    self.planeRendererDelegate = [[ARPlaneRendererDelegate alloc] initWithModelScale:self.arControllerOptions.modelScale];
-    NSLog(@"1312333131%@",self.planeRendererDelegate );
-//    self.planeRendererDelegate = [ARPlaneRendererDelegate new];
+    float mScale = 1.0f;
+    if(self.arControllerOptions.modelScale){
+        mScale = self.arControllerOptions.modelScale;
+    }
+    self.planeRendererDelegate = [[ARPlaneRendererDelegate alloc] initWithModelScale:mScale];
     self.sceneView.delegate = self.planeRendererDelegate;
     self.sceneView.showsStatistics = NO;
 
@@ -119,7 +116,6 @@ static ARWorldTrackingConfiguration *arconfig;
         if(self.arControllerOptions.repositionAllowed){
             [SettingsManager instance].repositionAllowed = YES;
         }
-        
     } else {
         NSLog(@"[%s] ARConfiguration is not supported.", __FUNCTION__);
     }

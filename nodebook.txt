@@ -1,0 +1,48 @@
+1.将VRARFramework.framework引入工程内
+2.点击工程，点击Build-settings，右上角搜索Other Linker Flags，添加-ObjC，注意debug和release都要添加
+3.在AppDelegate内#import <VRARFramework/DownloadResources.h>，建议在程序初始化的时候就开子线程进行文件下载
+新增方法prepareARfile，方法调用方式后续会修改，理论上需要传系统编号和模块编号，不需要传url
+- (void)prepareARfile {
+    NSArray *imageUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/js_video.jpeg", @"http://192.168.84.239:8088/public/ai_model.jpeg",@"http://192.168.84.239:8088/public/java_model.jpeg",@"http://192.168.84.239:8088/public/test_model.jpeg",@"http://192.168.84.239:8088/public/cube_model.jpeg",@"http://192.168.84.239:8088/public/seed_model.jpeg",nil];
+    NSArray *modelUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/ai.zip",@"http://192.168.84.239:8088/public/java.zip",@"http://192.168.84.239:8088/public/test.zip",@"http://192.168.84.239:8088/public/cube.zip",@"http://192.168.84.239:8088/public/seed.zip",nil];
+    NSArray *movieUrlArray = nil;
+    DownloadResources *downloadResources = [[DownloadResources alloc] init];
+    NSString *reflag = [downloadResources downloadFile:imageUrlArray modelUrl:modelUrlArray movieUrl:movieUrlArray];
+    if(![reflag isEqualToString:@"success"]){
+        NSLog(@"download faild, please check network");
+    }
+}
+在application内添加调用prepareARfile，下载可能比较久，建议开子线程
+    [NSThread detachNewThreadSelector:@selector(prepareARfile) toTarget:self withObject:nil];
+}
+4.在ViewController的viewDidLoad内添加
+    firstTestView *firstView = [[firstTestView alloc]init];
+    [self.view addSubview:firstView];
+5.新建firstTestView，#import<VRARFramework/ARController.h>和#import<VRARFramework/ARControllerOptions.h>，
+在init内新建button，点击调用toarpage方法，toarpage方法新建ARController视图，当第3步内的识别图的模型全部下载完成后，可以顺利识别
+-(instancetype)init {
+    if (self = [super init]) {
+        self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(30, 150, [UIScreen mainScreen].bounds.size.width-60, 44);
+        button.backgroundColor = [UIColor blueColor];
+        [button setTitle:@"AR扫一扫" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(toarpage) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:button];
+    }
+    return self;
+}
+
+- (void)toarpage {
+    NSArray *imageUrlArray = [NSArray arrayWithObjects:@"http://192.168.84.239:8088/public/js_video.jpeg", @"http://192.168.84.239:8088/public/ai_model.jpeg",@"http://192.168.84.239:8088/public/java_model.jpeg",@"http://192.168.84.239:8088/public/test_model.jpeg",@"http://192.168.84.239:8088/public/cube_model.jpeg",@"http://192.168.84.239:8088/public/seed_model.jpeg",nil];
+    ARControllerOptions *option = [[ARControllerOptions alloc] init];
+    option.imageUrlArray = imageUrlArray;
+    option.scaleAllowed = YES;
+    option.rotationAllowed = YES;
+    option.modelScale = 0.05;
+    ARController *playerViewController = [[ARController alloc] initWithOptions:option];
+    [self.navigationController pushViewController:playerViewController animated:YES];
+}
+
+
+@end

@@ -63,9 +63,6 @@
 		BB97BBA02771B84000CD5006 /* ARController.h in Headers */ = {isa = PBXBuildFile; fileRef = BB97BB9C2771B84000CD5006 /* ARController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBE162552771D67D00B40F7C /* ARControllerOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = BBE162532771D67D00B40F7C /* ARControllerOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBE162562771D67D00B40F7C /* ARControllerOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE162542771D67D00B40F7C /* ARControllerOptions.m */; };
-		BBE1627E2772F98000B40F7C /* vrar.obj in Resources */ = {isa = PBXBuildFile; fileRef = BBE1627B2772F98000B40F7C /* vrar.obj */; };
-		BBE1627F2772F98000B40F7C /* vrar.mtl in Resources */ = {isa = PBXBuildFile; fileRef = BBE1627C2772F98000B40F7C /* vrar.mtl */; };
-		BBE162802772F98000B40F7C /* vrar_model.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BBE1627D2772F98000B40F7C /* vrar_model.jpeg */; };
 		BBE163142775C13A00B40F7C /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = BBE162F12775C13A00B40F7C /* ZipArchive.h */; };
 		BBE163152775C13A00B40F7C /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE162F32775C13A00B40F7C /* mz_strm_os_posix.c */; };
 		BBE163162775C13A00B40F7C /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE162F42775C13A00B40F7C /* mz_strm_pkcrypt.c */; };
@@ -173,9 +170,6 @@
 		BB97BB9C2771B84000CD5006 /* ARController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARController.h; sourceTree = "<group>"; };
 		BBE162532771D67D00B40F7C /* ARControllerOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARControllerOptions.h; sourceTree = "<group>"; };
 		BBE162542771D67D00B40F7C /* ARControllerOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARControllerOptions.m; sourceTree = "<group>"; };
-		BBE1627B2772F98000B40F7C /* vrar.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vrar.obj; sourceTree = "<group>"; };
-		BBE1627C2772F98000B40F7C /* vrar.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vrar.mtl; sourceTree = "<group>"; };
-		BBE1627D2772F98000B40F7C /* vrar_model.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vrar_model.jpeg; sourceTree = "<group>"; };
 		BBE162F12775C13A00B40F7C /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		BBE162F32775C13A00B40F7C /* mz_strm_os_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_os_posix.c; sourceTree = "<group>"; };
 		BBE162F42775C13A00B40F7C /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_pkcrypt.c; sourceTree = "<group>"; };
@@ -338,9 +332,6 @@
 			isa = PBXGroup;
 			children = (
 				BBE162EF2775C13A00B40F7C /* SSZipArchive */,
-				BBE1627D2772F98000B40F7C /* vrar_model.jpeg */,
-				BBE1627C2772F98000B40F7C /* vrar.mtl */,
-				BBE1627B2772F98000B40F7C /* vrar.obj */,
 				BB97BAF5276C72E200CD5006 /* Constants.m */,
 				BB97BAF6276C72E200CD5006 /* FileData.m */,
 				BB97BAF7276C72E200CD5006 /* DownloadResources.m */,
@@ -588,10 +579,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE162802772F98000B40F7C /* vrar_model.jpeg in Resources */,
-				BBE1627F2772F98000B40F7C /* vrar.mtl in Resources */,
 				BBE1631C2775C13A00B40F7C /* LICENSE in Resources */,
-				BBE1627E2772F98000B40F7C /* vrar.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

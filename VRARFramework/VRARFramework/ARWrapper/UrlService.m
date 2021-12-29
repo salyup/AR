@@ -61,22 +61,16 @@ static NSString * BASE_URL_FOR_UFILE = @"https://baidu.com?ufileId=";
     }
 }
 
-+(void)copyARfiles {
-    DownloadResources *downloadResources = [[DownloadResources alloc] init];
-    [downloadResources resourcesFilePath:@"" folderName:imageFolderName resourcesType:fileImage];
-    [downloadResources resourcesFilePath:@"" folderName:modelFolderName resourcesType:fileModel];
-    NSString *cachespath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *targetPath1 = [cachespath stringByAppendingFormat:@"%@%@%@",@"/",imageFolderName,@"/vrar_model.jpeg"];
-    NSString *targetPath2 = [cachespath stringByAppendingFormat:@"%@%@%@",@"/",modelFolderName,@"/vrar.obj"];
-    NSString *targetPath3 = [cachespath stringByAppendingFormat:@"%@%@%@",@"/",modelFolderName,@"/vrar.mtl"];
-    NSString *sourcePath1 = [[NSBundle mainBundle]pathForResource:@"vrar_model" ofType:@"jpeg"];
-    NSString *sourcePath2 = [[NSBundle mainBundle]pathForResource:@"vrar" ofType:@"obj"];
-    NSString *sourcePath3 = [[NSBundle mainBundle]pathForResource:@"vrar" ofType:@"mtl"];
-    NSFileManager *manager = [NSFileManager defaultManager];
-    [manager copyItemAtPath:sourcePath1 toPath:targetPath1 error:nil];
-    [manager copyItemAtPath:sourcePath2 toPath:targetPath2 error:nil];
-    [manager copyItemAtPath:sourcePath3 toPath:targetPath3 error:nil];
-}
+//+(void)copyARfiles {
+//    DownloadResources *downloadResources = [[DownloadResources alloc] init];
+//    [downloadResources resourcesFilePath:@"" folderName:imageFolderName resourcesType:fileImage];
+//    [downloadResources resourcesFilePath:@"" folderName:modelFolderName resourcesType:fileModel];
+//    NSString *cachespath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+//    NSString *targetPath1 = [cachespath stringByAppendingFormat:@"%@%@%@",@"/",imageFolderName,@"/vrar_model.jpeg"];
+//    NSString *sourcePath1 = [[NSBundle mainBundle]pathForResource:@"vrar_model" ofType:@"jpeg"];
+//    NSFileManager *manager = [NSFileManager defaultManager];
+//    [manager copyItemAtPath:sourcePath1 toPath:targetPath1 error:nil];
+//}
  
 +(CGImageRef) convertCIImageToCGImage:(CIImage *) inputImage {
     CIContext *context = [CIContext contextWithOptions:nil];

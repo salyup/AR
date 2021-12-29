@@ -34,15 +34,12 @@
 
 -(void)alertToEncourageCameraAccessInitially{
     if([UIImagePickerController  isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
-//        UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
-            [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-                AVAuthorizationStatus status =[AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-                        if (status == AVAuthorizationStatusAuthorized){
-                            NSLog(@"1233");
-                        }else if(status == AVAuthorizationStatusDenied ||status ==AVAuthorizationStatusRestricted){//拒绝了权限
-                            NSLog(@"3455");
-                        }
-                    }];
+        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+            AVAuthorizationStatus status =[AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+            if (status == AVAuthorizationStatusAuthorized){
+            }else if(status == AVAuthorizationStatusDenied ||status ==AVAuthorizationStatusRestricted){//拒绝了权限
+            }
+        }];
     }
 }
 -(void)getNetworkStatus{

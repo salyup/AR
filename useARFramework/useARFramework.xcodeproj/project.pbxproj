@@ -18,7 +18,7 @@
 		2318AD051CF32546005743F1 /* UIView+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2318AD021CF32546005743F1 /* UIView+Tap.m */; };
 		2318AD061CF32546005743F1 /* UIView+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2318AD041CF32546005743F1 /* UIView+UIViewController.m */; };
 		BB97B9CD276B387C00CD5006 /* firstTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB97B9CA276B387C00CD5006 /* firstTestView.m */; };
-		BBE163BD277B064300B40F7C /* VRARFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE163BC277B064300B40F7C /* VRARFramework.framework */; };
+		BBE163C1277BF3EC00B40F7C /* VRARFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE163C0277BF3EC00B40F7C /* VRARFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		BB97B9C9276B387C00CD5006 /* firstTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstTestView.h; sourceTree = "<group>"; };
 		BB97B9CA276B387C00CD5006 /* firstTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstTestView.m; sourceTree = "<group>"; };
 		BBE163B12779B1B400B40F7C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BBE163BC277B064300B40F7C /* VRARFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VRARFramework.framework; sourceTree = SOURCE_ROOT; };
+		BBE163C0277BF3EC00B40F7C /* VRARFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VRARFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE163BD277B064300B40F7C /* VRARFramework.framework in Frameworks */,
+				BBE163C1277BF3EC00B40F7C /* VRARFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +93,7 @@
 		2318AC991CF32417005743F1 = {
 			isa = PBXGroup;
 			children = (
+				BBE163C0277BF3EC00B40F7C /* VRARFramework.framework */,
 				2318ACA41CF32417005743F1 /* useARFramework */,
 				2318ACA31CF32417005743F1 /* Products */,
 			);
@@ -111,7 +112,6 @@
 		2318ACA41CF32417005743F1 /* useARFramework */ = {
 			isa = PBXGroup;
 			children = (
-				BBE163BC277B064300B40F7C /* VRARFramework.framework */,
 				BBE163B12779B1B400B40F7C /* AppDelegate.h */,
 				2318ACA91CF32417005743F1 /* AppDelegate.m */,
 				2318ACF31CF3246B005743F1 /* View */,
